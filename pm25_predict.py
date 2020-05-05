@@ -6,7 +6,6 @@ sumy = 0
 mesures = pd.read_csv( name+".csv")
 epoch = mesures["time"].values
 pm25 = mesures[name+".pm25"].values
-lr = linear_model.LinearRegression()
 epoch = [epoch for epoch in range(len(epoch))]
 epoch = np.asanyarray(epoch)
 pm25 = np.asanyarray(pm25)
